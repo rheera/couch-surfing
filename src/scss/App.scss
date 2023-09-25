@@ -7,6 +7,11 @@ body {
   color: darkgrey;
   flex-direction: column;
 }
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .break {
   height: 1px;
   width: 90%;

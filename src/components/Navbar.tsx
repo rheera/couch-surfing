@@ -1,13 +1,16 @@
 import "../scss/Navbar.scss";
 
-export default function Nav() {
+export default function Nav(props: { name: string; isReturning: boolean }) {
+  console.log(props);
+
   return (
     <div className="nav-bar">
       <div className="logo"></div>
       <h3 className="user-container">
         Welcome
-        <span id="returning-user"></span>
-        <span id="user"></span>
+        <span id="user">
+          {props.isReturning && " back"} {props.name}
+        </span>
       </h3>
     </div>
   );

@@ -1,5 +1,5 @@
 import { Country } from "./types";
-import { LoyaltyUser } from "./enums";
+import { LoyaltyUser, Permissions } from "./enums";
 
 export interface Property {
   image: string;
@@ -20,4 +20,13 @@ export interface Review {
   stars: number;
   loyaltyUser: LoyaltyUser;
   date: string;
+}
+
+export interface User {
+  firstName: string;
+  lastName: string;
+  permissions: Permissions.ADMIN;
+  isReturning: boolean;
+  age: number;
+  stayedAt: string[];
 }

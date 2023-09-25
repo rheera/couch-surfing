@@ -1,6 +1,7 @@
 import { Permissions } from "../../types/enums";
+import { User } from "../../types/interfaces";
 
-export const you = {
+export const you: User = {
   firstName: "Bobby",
   lastName: "Brown",
   permissions: Permissions.ADMIN,

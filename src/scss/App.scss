@@ -18,9 +18,14 @@ body {
     width: 100%;
   }
 
-  .properties {
+  .other-properties {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .properties {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }

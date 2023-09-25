@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import { reviews } from "./assets/data/reviews";
-import "./App.css";
+import "./scss/App.scss";
 
 function App() {
   const [allReviews, setAllReviews] = useState(reviews);
@@ -19,6 +20,7 @@ function App() {
         <h5 id="reviews"></h5>
         {displayReviews}
       </div>
+      <Footer />
     </>
   );
 }

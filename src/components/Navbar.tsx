@@ -1,8 +1,6 @@
 import "../scss/Navbar.scss";
 
 export default function Nav(props: { name: string; isReturning: boolean }) {
-  console.log(props);
-
   return (
     <div className="nav-bar">
       <div className="logo"></div>
